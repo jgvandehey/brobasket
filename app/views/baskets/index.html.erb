@@ -1,0 +1,21 @@
+<h1>Listing pins</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Ingredients</th>
+                <th>Price</th>
+                <th>Images</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <%= render @baskets %>
+        </tbody>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Basket', new_basket_path %>

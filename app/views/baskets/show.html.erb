@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @basket.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @basket.description %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= number_to_currency(@basket.price) %>
+</p>
+
+<p>
+  <b>Ingredients:</b>
+  <%= @basket.ingredients %>
+</p>
+
+
+<%= link_to 'Edit', edit_basket_path(@basket) %> |
+<%= link_to 'Back', baskets_path %>

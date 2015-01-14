@@ -1,4 +1,11 @@
 Brobasket::Application.routes.draw do
+  
+  resources :baskets
+
+  root :to => 'pages#home'
+  get 'home' => 'pages#home'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,0 +1,10 @@
+   <tr>
+        <td><%= basket.name %></td>
+        <td><%= basket.description %></td>
+        <td><%= basket.ingredients %></td>
+        <td><%= basket.price %></td>
+        <td><%= image_tag basket.image_1(:medium), :style => "width: 20px" %></td>
+        <td><%= link_to 'Show', basket %></td>
+        <td><%= link_to 'Edit', edit_basket_path(basket) %></td>
+        <td><%= link_to 'Destroy', basket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
